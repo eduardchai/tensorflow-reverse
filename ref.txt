@@ -1,0 +1,34 @@
+[[[seq2seq.py]]]
+
+encoder_outputs:
+[<tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/RNN/MultiRNNCell/Cell1/GRUCell/add:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/RNN/MultiRNNCell_1/Cell1/GRUCell/add:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/RNN/MultiRNNCell_2/Cell1/GRUCell/add:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/RNN/MultiRNNCell_3/Cell1/GRUCell/add:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/RNN/MultiRNNCell_4/Cell1/GRUCell/add:0' shape=(?, 256) dtype=float32>]
+
+encoder_state or initial_state:
+Tensor("model_with_buckets/embedding_attention_seq2seq/RNN/concat_4:0", shape=(?, 512), dtype=float32)
+
+top_states: 
+[<tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/Reshape:0' shape=(?, 1, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/Reshape_1:0' shape=(?, 1, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/Reshape_2:0' shape=(?, 1, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/Reshape_3:0' shape=(?, 1, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/Reshape_4:0' shape=(?, 1, 256) dtype=float32>]
+
+attention_states: 
+Tensor("model_with_buckets/embedding_attention_seq2seq/concat:0", shape=(?, 5, 256), dtype=float32)
+
+decoder_inputs: 
+[<tf.Tensor 'decoder0:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder1:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder2:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder3:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder4:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder5:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder6:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder7:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder8:0' shape=(?,) dtype=int32>, <tf.Tensor 'decoder9:0' shape=(?,) dtype=int32>]
+
+cell: 
+<tensorflow.python.ops.rnn_cell.MultiRNNCell object at 0x7f3a8c897590>
+cell.output_size: 256
+
+proj_weights: 
+Tensor("proj_w/read:0", shape=(256, 10000), dtype=float32, device=/device:CPU:0)
+
+proj_biases: 
+Tensor("proj_b/read:0", shape=(10000,), dtype=float32, device=/device:CPU:0)
+
+emb_inp: 
+[<tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_1:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_2:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_3:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_4:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_5:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_6:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_7:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_8:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/embedding_lookup_9:0' shape=(?, 256) dtype=float32>]
+
+hidden: 
+Tensor("model_with_buckets/embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Reshape:0", shape=(?, 5, 1, 256), dtype=float32)
+
+

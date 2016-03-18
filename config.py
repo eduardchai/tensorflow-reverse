@@ -1,0 +1,13 @@
+LEARNING_RATE = 0.5					# Learning rate.
+LEARNING_RATE_DECAY_FACTOR = 0.99	# Learning rate decays by this much.
+MAX_GRADIENT_NORM = 5.0				# Clip gradients to this norm.
+BATCH_SIZE = 64						# Batch size to use during training.
+SIZE = 256							# Size of each model layer.
+NUM_LAYERS = 2						# Number of layers in the model.
+CT_VOCAB_SIZE = 10000				# Customer vocabulary size.
+OP_VOCAB_SIZE = 10000				# Operator vocabulary size.
+DATA_DIR = "./data_dir"				# Data directory
+TRAIN_DIR = "./train_dir"			# Trained model directory.
+MAX_TRAIN_DATA_SIZE = 0				# Limit on the size of training data (0: no limit).
+STEPS_PER_CHECKPOINT = 50			# How many training steps to do per checkpoint.
+MAX_STEP = 20000					# Max number of steps per run
